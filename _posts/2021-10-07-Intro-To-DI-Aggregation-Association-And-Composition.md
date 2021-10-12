@@ -111,4 +111,4 @@ Covered above many blogs and posts. Many others want you to favor composition ov
 
 The problem with this example is not in its ability to explain contracts but in how they could be extended. If we needed a reptile with the same properties as a mammal. We would only have a few options. Make lizard a subclass of mammal. This is bad practice lizards are not warm-blooded. We would have methods that do not fully apply to us. I have personally seen this in a few code bases. Create a reptile superclass with the same properties as a mammal, this is also bad in my eyes as now we have code duplication. Moving from an is-a to a has-a relationship we move away from this complexity, the fragile base class problem.
 
-You can learn and use DI without knowing this in great depth. I just find it helps to know the tools you are using. 
+You can learn and use DI without knowing this in great depth. I just find it helps to know the tools you are using.
