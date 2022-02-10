@@ -146,3 +146,5 @@ Test doubles are just the start of the dive into the talk of dependencies in tes
 The first thing I had to wrap my head around is what dependency is. When you read something it may not click till you use it, or do some more digging. Shared, private, and out-of-process dependencies came up the most. 
 What is a collaborator? Anything mutable. Classes like the dbContext would be a collaborator because it is providing access to the database. The DB is a shared dependency. Value types or objects can be dependencies as well. A shared dependency is a dependency used between tests and can affect each other's outcomes. A private dependency is not shared. An out of process dependency runs outside the applications execution process. This is a rabbit hole of what's what information.
 
+![A diagram for dependencies](https://raw.githubusercontent.com/KamRon-67/KamRon-67.github.io/abd931ddb80c01ec5c5e1fc41e96fda1aed20c90/assets/img/Dependencies.jpg "A diagram for dependencies")
+
