@@ -17,8 +17,6 @@ This is when I found out about the WebApplicationFactory class. I was late to th
 
 > To me, the WebApplicationFactory class is just an in-memory application that can handle HttpClient, in-memory DB's it can do more tho.
 
-
-
 I am only able to use this with newer projects .net 3 plus. For me, that is not a problem as I want to distance myself from dotnet framework.  One can configure test-specific implementations of services. Or override the default behavior in the WebApplicationFactory instance. This opens a TDD lane for me. 
 
 Here is a simple example of using WebApplicationFactory for testing an ASP.NET Core MVC application [**(Full app here)**](https://github.com/DamianEdwards/MinimalApiPlayground):
