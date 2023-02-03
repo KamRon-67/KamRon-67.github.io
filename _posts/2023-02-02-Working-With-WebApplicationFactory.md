@@ -5,21 +5,24 @@ tags: [TDD, Testing, Testing Framework, C#, WebApplicationFactory, Xunit]
 categories: [Blogging]
 ---
 
-	Throughout my career, I have seen the testing pyramid. I was under the impression that one should create more unit tests than integration tests with a dash of UI testing. The first part of my career. I was an automation developer. So, I only did UI testing. After moving back to the formal development side. To my shock many of the places I worked. Testing was not integral to the dev process. Personally, this burned me and added unnecessary stress to my life. 
+Throughout my career, I have seen the testing pyramid. I was under the impression that one should create more unit tests than integration tests with a dash of UI testing. The first part of my career. I was an automation developer. So, I only did UI testing. After moving back to the formal development side. To my shock many of the places I worked. Testing was not integral to the dev process. Personally, this burned me and added unnecessary stress to my life. 
 
-	That was then, now. I test software in ways that help me sleep at night. Later when a bug is found or we need to extend this feature. I noticed zero stress on my side. I can make the changes quickly and possibly improve the logic. The requirements are locked in. Finding myself on the backend of things more than the front end. Integration tests gives me more value as I am creating several moving parts. 
+That was then, now. I test software in ways that help me sleep at night. Later when a bug is found or we need to extend this feature. I noticed zero stress on my side. I can make the changes quickly and possibly improve the logic. The requirements are locked in. Finding myself on the backend of things more than the front end. Integration tests gives me more value as I am creating several moving parts. 
 
-	When I first started out testing my software I would tend to blur the lines between unit tests and integration tests. My unit tests may touch a few parts of the system and many would not consider them unit tests any longer. There would not be any calls to a database or service. I would mock the responses. This blurring was a compromise between testing at all and working with a client's ci cd process.
+When I first started out testing my software I would tend to blur the lines between unit tests and integration tests. My unit tests may touch a few parts of the system and many would not consider them unit tests any longer. There would not be any calls to a database or service. I would mock the responses. This blurring was a compromise between testing at all and working with a client's ci cd process.
 
 This is when I found out about the WebApplicationFactory class. I was late to the party and probably working on a legacy application. Legacy applications are sometimes my bread and butter. Staying current on new ways to test is best. Then I stumbled onto the WebApplicationFactory.
 
-"To me, the WebApplicationFactory class is just an in-memory application that can handle HttpClient, in-memory DB's it can do more tho"
+## How I see it
+
+> To me, the WebApplicationFactory class is just an in-memory application that can handle HttpClient, in-memory DB's it can do more tho.
+
+
 
 I am only able to use this with newer projects .net 3 plus. For me, that is not a problem as I want to distance myself from dotnet framework.  One can configure test-specific implementations of services. Or override the default behavior in the WebApplicationFactory instance. This opens a TDD lane for me. 
 
-Here is a simple example of using WebApplicationFactory for testing an ASP.NET Core MVC application:
+Here is a simple example of using WebApplicationFactory for testing an ASP.NET Core MVC application [**(Full app here)**](https://github.com/DamianEdwards/MinimalApiPlayground):
 
-https://github.com/DamianEdwards/MinimalApiPlayground
 
 ```csharp
 using Microsoft.AspNetCore.Mvc.Testing;
