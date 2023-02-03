@@ -3,8 +3,8 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# Only if your site type is GitHub Project sites and doesn't have a custom domain,
-# change below value to '/projectname'.
+# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
+# and doesn't have a custom domain.
 baseurl: ''
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
@@ -12,13 +12,14 @@ baseurl: ''
 # otherwise, the layout language will use the default value of 'en'.
 lang: en
 
+
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: America/Chicago
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Jr Dev                          # the main title
+title: Jr Dev                           # the main title
 
 tagline: Keeping software simple   # it will display as the sub-title
 
@@ -40,22 +41,22 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Cameron Young
-  email: cameronyoung@cmmsolutions.io    # change to your email address
+  email: cameronyoung@cmmsolutions.io            # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/sigfualt      # change to your twitter homepage
+    - https://twitter.com/sigfualt     # change to your twitter homepage
     - https://github.com/KamRon-67       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/cameron-young-1b49a3b9/
 
-google_site_verification: google_meta_tag_verification # change to your verification string
+google_site_verification: google_meta_tag_verification               # fill in to your verification string
 
 # ↑ --------------------------
-
+# The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: 'UA-149577567-1'              # fill in your Google Analytics ID
+  id: 'UA-149577567-1'        # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
@@ -72,7 +73,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode:    # [light|dark]
+theme_mode:   # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -82,14 +83,41 @@ theme_mode:    # [light|dark]
 img_cdn: ''
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://raw.githubusercontent.com/KamRon-67/jrdev.io/master/assets/img/avatar.png
+avatar: 'https://raw.githubusercontent.com/KamRon-67/jrdev.io/master/assets/img/avatar.png'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
 
-disqus:
-  comments: true  # boolean type, the global switch for posts comments.
-  shortname: 'jr-dev-1'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+comments: true
+  active: true        # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  # The active options are as follows:
+  disqus:
+    shortname: 'jr-dev-1'   # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances settings › https://utteranc.es/
+  utterances:
+    repo:         # <gh-username>/<repo>
+    issue_term:   # < url | pathname | title | ...>
+  # Giscus options › https://giscus.app
+  giscus:
+    repo:              # <gh-username>/<repo>
+    repo_id:
+    category:
+    category_id:
+    mapping:           # optional, default to 'pathname'
+    input_position:    # optional, default to 'bottom'
+    lang:              # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
+
+# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+assets:
+  self_host:
+    enabled:      # boolean, keep empty means false
+    # specify the Jekyll environment, empty means both
+    # only works if `assets.self_host.enabled` is 'true'
+    env:          # [development|production]
+
+pwa:
+  enabled: true   # the option for PWA feature
 
 paginate: 10
 
@@ -111,10 +139,8 @@ collections:
     output: true
     sort_by: order
 
-
 defaults:
-  -
-    scope:
+  - scope:
       path: ''          # An empty string here means all files in the project
       type: posts
     values:
@@ -124,19 +150,24 @@ defaults:
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
       permalink: /posts/:title/
-  -
-    scope:
+  - scope:
       path: _drafts
     values:
       comments: false
-  -
-    scope:
+  - scope:
       path: ''
       type: tabs             # see `site.collections`
     values:
       layout: page
       permalink: /:title/
-      dynamic_title: true    # Hide title in mobile screens.
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
 
 sass:
   style: compressed
@@ -154,12 +185,12 @@ exclude:
   - '*.gem'
   - '*.gemspec'
   - tools
-  - docs
   - README.md
+  - CHANGELOG.md
   - LICENSE
   - gulpfile.js
   - node_modules
-  - '*.json'
+  - package*.json
 
 jekyll-archives:
   enabled: [categories, tags]
