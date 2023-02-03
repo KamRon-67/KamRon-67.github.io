@@ -3,6 +3,7 @@ title: "Working With WebApplicationFactory"
 description: "Working with the WebApplicationFactory class to create tests"
 tags: [TDD, Testing, Testing Framework, C#, WebApplicationFactory, Xunit]
 categories: [Blogging]
+excerpt_image: https://raw.githubusercontent.com/KamRon-67/jrdev.io/master/assets/img/green_plant.jpg
 ---
 
 Throughout my career, I have seen the testing pyramid. I was under the impression that one should create more unit tests than integration tests with a dash of UI testing. The first part of my career. I was an automation developer. So, I only did UI testing. After moving back to the formal development side. To my shock many of the places I worked. Testing was not integral to the dev process. Personally, this burned me and added unnecessary stress to my life.
