@@ -117,6 +117,6 @@ public class TodoApi
 
 ```
 
-Well after looking at the miniamal api's I had one question. WebApplicationFactory<T> expects an entry-point-class. What do I give it?  That was a common question and the answer is [**(here)**](https://stackoverflow.com/questions/69058176/how-to-use-webapplicationfactory-in-net6-without-speakable-entry-point). There was also an answer about how to set this up inconjuction with xunit's IClassFixture. 
+Well after looking at the miniamal api's I had one question. WebApplicationFactory<T> expects an entry-point-class. What do I give it?  That was a common question and the answer is [here](https://stackoverflow.com/questions/69058176/how-to-use-webapplicationfactory-in-net6-without-speakable-entry-point). There was also an answer about how to set this up inconjuction with xunit's IClassFixture. 
 
 WebApplicationFactory is a valuable tool for integration testing ASP.NET Core applications. It provides a complete testing environment, including a deployed app and an in-memory server, making it much easier to set up, and run tests.  
