@@ -1,11 +1,9 @@
 ---
-title: "Working With The WebApplicationFactory"
-description: "Working with a WebApplicationFactory class to create tests"
+title: "Working With WebApplicationFactory"
+description: "Working with the WebApplicationFactory class to create tests"
 tags: [TDD, Testing, Testing Framework, C#, WebApplicationFactory, Xunit]
 categories: [Blogging]
 ---
-
-## Quick over view 
 
 Throughout my career, I have seen the testing pyramid. I was under the impression that one should create more unit tests than integration tests with a dash of UI testing. The first part of my career. I was an automation developer. So, I only did UI testing. After moving back to the formal development side. To my shock many of the places I worked. Testing was not integral to the dev process. Personally, this burned me and added unnecessary stress to my life.
 
@@ -119,4 +117,8 @@ public class TodoApi
 
 ```
 
-WebApplicationFactory is a valuable tool for integration testing ASP.NET Core applications. It provides a complete testing environment, including a deployed app and an in-memory server, making it much easier to set up, and run tests.
+WebApplicationFactory is a valuable tool for integration testing ASP.NET Core applications. It provides a complete testing environment, including a deployed app and an in-memory server, making it much easier to set up, and run tests.  
+
+
+2023-02-02-Working-With-WebApplicationFactory.md
+
