@@ -6,7 +6,7 @@ Being in the C# space for over six plus years. You get in the habit of doing thi
 Hello World Examples:
 
 
-```Js
+```js
 const express = require("express");
 const app = express();
 
@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 app.listen(3000);
 ```
 
-```Csharp
+```csharp
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
