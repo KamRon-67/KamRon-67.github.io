@@ -1,4 +1,8 @@
-Title: Minimal APIs in C#: A Step Past the Beginner's Guide
+---
+title: "Minimal APIs in C#: A Step Past the Beginner’s Guide"
+tags: [C#, Minimal, Python, JS]
+categories: [Blogging, API]
+---
 
 Introduction:
 Being in the C# space for over six plus years. You get in the habit of doing things the dotnet way. I personally like that dotnet is very vocal in patterns and how to structure things. With the release of dotnet 6 we have access to Minimal APIs. While C# pays my bills and is my personal favorite. (followed by swift it has been growing on me) I have used other languages. When I first saw Minimal APIs my brain just went to similar Express and Flask, example below. Both of those frameworks have been out for years. I have used both to make some cool things. So my first thought was “How do I increase the  cyclomatic complexity?” 
