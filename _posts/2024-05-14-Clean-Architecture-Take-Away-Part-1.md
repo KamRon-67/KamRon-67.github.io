@@ -1,6 +1,6 @@
 ---
 title: "Clean Architecture Take Away Part 1"
-description: "Taking the time to process what I have read from books and the community
+description: "Taking the time to process what I have read from books and the community"
 tags: [Clean Architecture, C#, Code]
 categories: [Blogging]
 ---
