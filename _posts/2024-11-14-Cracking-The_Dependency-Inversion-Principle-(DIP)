@@ -1,3 +1,10 @@
+---
+title: "Cracking the Dependency Inversion Principle (DIP)"
+description: "In this post, we’ll dive deep into the Dependency Inversion Principle (DIP), a key SOLID principle that enhances your code’s flexibility, maintainability, and testability"
+tags: [DIP, Kata, C#, Code]
+categories: [Blogging]
+---
+
 ### Cracking the Dependency Inversion Principle (DIP)
 
 Dependency Inversion Principle (DIP) might sound intimidating, but it’s a powerful tool to improve the flexibility, testability, and maintainability of your code. Here’s the main idea: **high-level modules** (your core business logic) shouldn’t depend on **low-level modules** (like specific services or infrastructure details). Instead, both should depend on **abstractions** (interfaces or abstract classes).
