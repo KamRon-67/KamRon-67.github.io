@@ -1,3 +1,10 @@
+---
+title: "Building AI Powered Applications."
+description: "We are creating a local AI using aspire"
+tags: [DIP, AI, C#, Code]
+categories: [Blogging]
+---
+
 Artificial Intelligence (AI) is transforming the way developers create applications. It’s up to us to adapt and grow with it. With frameworks like .NET Aspire, building local AI-powered solutions has never been more accessible. Having a local environment to prototype innovative solutions is essential—whether you're working on a chatbot, processing images, or analyzing text. Plus, with Aspire, you can seamlessly scale and deploy to the cloud when needed.
 
 In this guide, we’ll walk through the steps to create a local AI-powered application using .NET Aspire. To demonstrate its potential, we’ll build a chatbot and showcase how to integrate AI libraries into your .NET project.
