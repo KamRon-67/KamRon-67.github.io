@@ -134,7 +134,7 @@ public class AIApiService
     public async Task<string> PullModelAsync(string ollamaUrl, string modelName)  
     {  
         var requestUri = $"{ollamaUrl}/api/pull";  
-        var jsonContent = $"{{ "name": "{modelName}" }}";  
+        var jsonContent = $"";  
         var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");  
   
         var response = await _httpClient.PostAsync(requestUri, content);  
