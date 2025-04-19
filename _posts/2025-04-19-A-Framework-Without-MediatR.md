@@ -3,6 +3,9 @@ title: "Simplify Your Clean Architecture Practice: A Framework Without MediatR O
 description: "When working with an architectrual kata lets see if we need MediatR"
 tags: [Clean Architecture, MediatR, Architecture Kata, Minimal APIs]
 categories: [Blogging]
+ image:
+  path: assets/img/MediatRComic.png
+  alt: comic for post
 ---
 
 ### Simplify Your Clean Architecture Practice
@@ -11,7 +14,7 @@ categories: [Blogging]
 I stopped using MediatR just to practice clean architecture fundamentals. If you are working a simple project or a quick kata, you need things to be available. You need focus, not complex abstractions. Discover an explicit framework designed to get your hands dirty. 
 Many clean architecture examples, often drawing inspiration from Uncle Bob’s famous diagrams showing the flow of control, lean on the popular MediatR library. 
 
-```
+```csharp
 app.MapPost("/api/posts", async (IMediator mediator, Post post) => 
 {
     var createPost = new CreatePost { PostContent = post.Comments };
@@ -22,7 +25,7 @@ app.MapPost("/api/posts", async (IMediator mediator, Post post) =>
 
 It’s a solid library for implementing the Mediator pattern, effectively decoupling how objects interact by routing communication. Through a central mediator object rather than direct calls. It helps keep handlers isolated, but this can also be achieved cleanly using direct dependency injection. Something like this. 
 
-```
+```csharp
 app.MapPost("/api/posts", async (Post post, ICreatePostHandler createPostHandler) =>
 {
     var createPost = new CreatePost { PostContent = post.Content, PostComments = post.Comments };
