@@ -45,8 +45,6 @@ The result? A Clean Architecture framework tailor-made for katas. It retains th
 
 Go ahead and try an architectural kata!
 • [Explore the framework.](https://github.com/KamRon-67/clean-architecture-for-katas)
-• See the explicit flow: Less magic, more clarity.
-• Get started faster: Less boilerplate for your practice sessions.
 
 Contributions or feedback are always welcome!
 
