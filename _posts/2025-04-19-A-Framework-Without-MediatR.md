@@ -3,9 +3,7 @@ title: "Simplify Your Clean Architecture Practice: A Framework Without MediatR O
 description: "When working with an architectrual kata lets see if we need MediatR"
 tags: [Clean Architecture, MediatR, Architecture Kata, Minimal APIs]
 categories: [Blogging]
- image:
-  path: assets/img/MediatRComic.png
-  alt: comic for post
+image: assets/img/MediatRComic.png
 ---
 
 ### Simplify Your Clean Architecture Practice
