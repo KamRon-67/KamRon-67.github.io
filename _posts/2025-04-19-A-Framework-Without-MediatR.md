@@ -3,7 +3,6 @@ title: "Simplify Your Clean Architecture Practice: A Framework Without MediatR O
 description: "When working with an architectrual kata lets see if we need MediatR"
 tags: [Clean Architecture, MediatR, Architecture Kata, Minimal APIs]
 categories: [Blogging]
-image: assets/img/MediatRComic.png
 ---
 
 ### Simplify Your Clean Architecture Practice
@@ -45,9 +44,9 @@ The process involved systematically working through test failures. Primarily int
 The result? A Clean Architecture framework tailor-made for katas. It retains the essential layered structure but replaces MediatR's indirection with explicit, direct calls via dependency injection. This makes the flow of control instantly traceable and slash setup time, letting you focus purely on practicing your domain modeling and application logic.
 
 Go ahead and try an architectural kata!
-    • [Explore the framework.](https://github.com/KamRon-67/clean-architecture-for-katas)
-    • See the explicit flow: Less magic, more clarity.
-    • Get started faster: Less boilerplate for your practice sessions.
+• [Explore the framework.](https://github.com/KamRon-67/clean-architecture-for-katas)
+• See the explicit flow: Less magic, more clarity.
+• Get started faster: Less boilerplate for your practice sessions.
 
 Contributions or feedback are always welcome!
 
