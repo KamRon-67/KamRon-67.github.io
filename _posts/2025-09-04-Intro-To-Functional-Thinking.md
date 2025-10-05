@@ -1,5 +1,5 @@
 ---
-title: "Changing your thinking from Imperative to FP "
+title: "Changing Your Thinking From Imperative to FP "
 description: "To change your thinking from Imperative to FP"
 tags: [Functional Programming]
 categories: [FP]
