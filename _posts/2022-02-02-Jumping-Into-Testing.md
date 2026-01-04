@@ -2,7 +2,7 @@
 title: "Using Tests To Speed up FeedBack Loop"
 mermaid: true
 tags: [C#, Unit Testing, Testing, Test Doubles, Mocks, London School, Detroit School, Collaborators, Dependencies]
-categories: [blogging, testing]
+categories: [Blogging, testing]
 
 ---
 
